@@ -82,7 +82,7 @@ export default function HomePage() {
           style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "48px 48px" }}
         />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 w-full">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 w-full">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#2980B9]/20 border border-[#2980B9]/30 text-[#93C4E0] text-xs font-semibold tracking-widest uppercase mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-[#93C4E0] animate-pulse" />
@@ -95,7 +95,7 @@ export default function HomePage() {
               since 1989.
             </h1>
 
-            <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-2xl mb-10">
+            <p className="text-sm text-white/70 leading-relaxed max-w-2xl mb-10">
               GSA Traders supplies wholesale and export buyers with a broad range of seafood species, processed and packed to specification at our Cape Town facility. We work with restaurants, retailers, distributors, and international buyers across local and export markets.
             </p>
 
