@@ -313,7 +313,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── CERTIFICATIONS ─── */}
-      <CertificationStrip />
+      <CertificationStrip showNote />
 
       {/* ─── CTA ─── */}
       <CTASection
@@ -325,9 +325,6 @@ export default function HomePage() {
         secondaryHref="/products"
         variant="ocean"
       />
-      <p className="mx-auto my-2.5 max-w-[550px] px-4 text-xs text-center leading-relaxed text-[#0D1F3C]/40">
-        Certification status is subject to current audit cycles. Please confirm applicable certifications for your market with our team. MSC status should be verified before use in export documentation.
-      </p>
     </>
   );
 }
