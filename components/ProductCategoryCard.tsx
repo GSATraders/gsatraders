@@ -7,7 +7,6 @@ interface ProductCategoryCardProps {
   name: string;
   description: string;
   icon: string;
-  productCount?: number;
   variant?: "default" | "compact";
 }
 
@@ -16,7 +15,6 @@ export default function ProductCategoryCard({
   name,
   description,
   icon,
-  productCount,
   variant = "default",
 }: ProductCategoryCardProps) {
   if (variant === "compact") {
@@ -50,13 +48,8 @@ export default function ProductCategoryCard({
       <p className="text-sm text-[#0D1F3C]/60 leading-relaxed flex-1">
         {description}
       </p>
-      <div className="mt-4 flex items-center justify-between">
-        {productCount && (
-          <span className="text-xs text-[#2980B9]/70 font-medium">
-            {productCount} species
-          </span>
-        )}
-        <span className="ml-auto text-sm font-semibold text-[#2980B9] flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+      <div className="mt-4 flex items-center justify-end">
+        <span className="text-sm font-semibold text-[#2980B9] flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
           View products
           <ArrowRight size={14} />
         </span>

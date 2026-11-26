@@ -55,7 +55,6 @@ export default function ProductsPage() {
                 name={cat.name}
                 description={cat.description}
                 icon={cat.icon}
-                productCount={cat.products.length}
               />
             ))}
           </div>

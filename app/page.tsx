@@ -38,12 +38,12 @@ const capabilities = [
   },
   {
     title: "Cold-chain distribution",
-    body: "Temperature-controlled handling from processing through to delivery. Western Cape and KZN distribution.",
+    body: "Temperature-controlled handling from quayside, through processing and on to delivery. Distribution throughout the Western Cape and Kwazulu-Natal.",
     icon: "❄️",
   },
   {
     title: "Import and export",
-    body: "Sourcing from local fisheries and international suppliers. Experience with EU, US, and Asian market documentation requirements.",
+    body: "Sourcing from local fisheries and international suppliers. Experience with EU, US, Australasian and Asian market documentation requirements.",
     icon: "🌍",
   },
   {
@@ -54,9 +54,8 @@ const capabilities = [
 ];
 
 const whyGSA = [
-  "In-house processing gives tighter control over grading, portioning, and pack specifications",
+  "In-house processing gives us tight control over grading, portioning, and pack specifications",
   "Long-running supplier relationships support consistent access across multiple product categories",
-  "Cape Town processing and KZN distribution cover key South African market areas",
   "Buyers deal directly with the team managing availability, orders, and specifications",
   "Export documentation and compliance requirements are handled for each relevant market",
   "Over three decades of continuous operation as a family-owned business",
@@ -120,7 +119,7 @@ export default function HomePage() {
 
         <div className="absolute bottom-0 left-0 right-0">
           <svg viewBox="0 0 1440 64" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-8 md:h-12">
-            <path d="M0 64L480 20L960 48L1440 0V64H0Z" fill="white"/>
+            <path d="M0 64C360 8 1080 8 1440 64V64H0Z" fill="white"/>
           </svg>
         </div>
       </section>
@@ -159,7 +158,6 @@ export default function HomePage() {
                 name={cat.name}
                 description={cat.description}
                 icon={cat.icon}
-                productCount={cat.products.length}
               />
             ))}
           </div>
@@ -247,10 +245,10 @@ export default function HomePage() {
                 Why buyers choose us
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-5">
-                Supplying seafood to restaurants, retailers, wholesalers, and export buyers since 1989
+                Supplying seafood to restaurant distributors, retailers, wholesalers, and export buyers since 1989.
               </h2>
               <p className="text-base text-white/60 leading-relaxed mb-6">
-                GSA Traders has been operating continuously since 1989. We supply a range of buyer types and have long-running relationships with local and international accounts.
+                GSA Traders has been operating continuously for over 37 years. We supply a range of buyer types and have long-running relationships with local and international accounts.
               </p>
               <Link
                 href="/about"
@@ -321,7 +319,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── CERTIFICATIONS ─── */}
-      <CertificationStrip showNote />
+      <CertificationStrip />
 
       {/* ─── CTA ─── */}
       <CTASection
@@ -333,6 +331,9 @@ export default function HomePage() {
         secondaryHref="/products"
         variant="ocean"
       />
+      <p className="mx-auto my-2.5 max-w-[550px] px-4 text-xs text-center leading-relaxed text-[#0D1F3C]/40">
+        Certification status is subject to current audit cycles. Please confirm applicable certifications for your market with our team. MSC status should be verified before use in export documentation.
+      </p>
     </>
   );
 }

@@ -46,7 +46,7 @@ export default function Header() {
               alt="GSA Traders"
               width={120}
               height={72}
-              className="h-12 md:h-14 w-auto object-contain"
+              className={`${scrolled ? "h-14 md:h-16" : "h-12 md:h-14"} w-auto object-contain transition-all duration-300`}
               priority
             />
           </Link>

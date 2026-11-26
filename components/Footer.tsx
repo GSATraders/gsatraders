@@ -106,19 +106,19 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5">
                 <MapPin size={14} className="text-[#93C4E0] mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-white/70">
+                <Link href="/contact" className="text-sm text-white/70 hover:text-white transition-colors">
                   Cape Town, Western Cape
                   <br />
                   South Africa
-                </span>
+                </Link>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone size={14} className="text-[#93C4E0] flex-shrink-0" />
                 <a
-                  href="tel:+27215551234"
+                  href="tel:+27215562223"
                   className="text-sm text-white/70 hover:text-white transition-colors"
                 >
-                  +27 (0)21 555 1234
+                  +27 (0)21 556 2223
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
