@@ -59,7 +59,7 @@ export default function ContactPage() {
             {branches.map((branch) => (
               <div
                 key={branch.name}
-                className="rounded-2xl bg-white border border-[#EBF5FB] shadow-[0_2px_16px_rgba(13,31,60,0.06)] overflow-hidden"
+                className="rounded-3xl bg-white border border-[#EBF5FB] shadow-[0_2px_16px_rgba(13,31,60,0.06)] overflow-hidden"
               >
                 {/* Map placeholder */}
                 <div className="h-44 bg-[#EBF5FB] border-b border-[#D6EBF7] flex items-center justify-center relative">
@@ -150,7 +150,7 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              <div className="mt-8 p-5 rounded-xl bg-[#FAFCFE] border border-[#EBF5FB]">
+              <div className="mt-8 p-5 rounded-2xl bg-[#FAFCFE] border border-[#EBF5FB]">
                 <p className="text-xs text-[#0D1F3C]/50 leading-relaxed">
                   We typically respond to all enquiries within one business day. For urgent requirements, please call our Cape Town office directly.
                 </p>
@@ -158,7 +158,7 @@ export default function ContactPage() {
             </div>
 
             {/* Right: form */}
-            <div className="p-8 rounded-2xl bg-[#FAFCFE] border border-[#EBF5FB] shadow-[0_2px_20px_rgba(13,31,60,0.07)]">
+            <div className="p-8 rounded-3xl bg-[#FAFCFE] border border-[#EBF5FB] shadow-[0_2px_20px_rgba(13,31,60,0.07)]">
               <ContactForm />
             </div>
           </div>

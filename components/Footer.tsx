@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <div className="mb-4">
-              <div className="inline-block bg-white rounded-xl px-3 py-2">
+              <div className="inline-block bg-white rounded-2xl px-3 py-2">
                 <Image
                   src="/images/logo/gsa-logo.png"
                   alt="GSA Traders"

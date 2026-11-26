@@ -9,7 +9,7 @@ export default function TrustBadge({ icon, label, sublabel, variant = "light" }:
   const isDark = variant === "dark";
   return (
     <div
-      className={`flex items-center gap-3 px-4 py-3 rounded-xl border ${
+      className={`flex items-center gap-3 px-4 py-3 rounded-2xl border ${
         isDark
           ? "bg-white/10 border-white/20 text-white"
           : "bg-white border-[#EBF5FB] text-[#0D1F3C] shadow-[0_2px_12px_rgba(13,31,60,0.07)]"

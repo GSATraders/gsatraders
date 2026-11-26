@@ -44,7 +44,7 @@ export default function CertificationStrip({
           {certs.map((cert) => (
             <div
               key={cert.label}
-              className={`flex items-center justify-center rounded-lg px-4 py-3 ${
+              className={`flex items-center justify-center rounded-xl px-4 py-3 ${
                 isDark ? "bg-white/10" : "bg-white shadow-sm border border-[#D6EBF7]"
               }`}
             >

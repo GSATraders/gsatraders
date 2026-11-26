@@ -56,7 +56,7 @@ export default function CTASection({
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href={primaryHref}
-            className={`inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm transition-colors ${styles.primary}`}
+            className={`inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-sm transition-colors ${styles.primary}`}
           >
             {primaryLabel}
             <ArrowRight size={16} />
@@ -64,7 +64,7 @@ export default function CTASection({
           {secondaryLabel && secondaryHref && (
             <Link
               href={secondaryHref}
-              className={`inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg font-semibold text-sm transition-colors ${styles.secondary}`}
+              className={`inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-sm transition-colors ${styles.secondary}`}
             >
               {secondaryLabel}
             </Link>

@@ -87,7 +87,7 @@ export default function ContactForm() {
             required
             value={form.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all placeholder:text-[#0D1F3C]/30"
+            className="w-full px-4 py-3 rounded-xl border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all placeholder:text-[#0D1F3C]/30"
             placeholder="Your full name"
           />
         </div>
@@ -101,7 +101,7 @@ export default function ContactForm() {
             type="text"
             value={form.company}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all placeholder:text-[#0D1F3C]/30"
+            className="w-full px-4 py-3 rounded-xl border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all placeholder:text-[#0D1F3C]/30"
             placeholder="Your company"
           />
         </div>
@@ -119,7 +119,7 @@ export default function ContactForm() {
             required
             value={form.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all placeholder:text-[#0D1F3C]/30"
+            className="w-full px-4 py-3 rounded-xl border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all placeholder:text-[#0D1F3C]/30"
             placeholder="email@company.com"
           />
         </div>
@@ -133,7 +133,7 @@ export default function ContactForm() {
             type="tel"
             value={form.phone}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all placeholder:text-[#0D1F3C]/30"
+            className="w-full px-4 py-3 rounded-xl border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all placeholder:text-[#0D1F3C]/30"
             placeholder="+27 (0)__ ___ ____"
           />
         </div>
@@ -150,7 +150,7 @@ export default function ContactForm() {
             required
             value={form.buyerType}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all"
+            className="w-full px-4 py-3 rounded-xl border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all"
           >
             <option value="" disabled>Select your buyer type</option>
             {buyerTypes.map((t) => (
@@ -168,7 +168,7 @@ export default function ContactForm() {
             type="text"
             value={form.productInterest}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all placeholder:text-[#0D1F3C]/30"
+            className="w-full px-4 py-3 rounded-xl border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all placeholder:text-[#0D1F3C]/30"
             placeholder="e.g. Cape Hake, Squid, Prawns..."
           />
         </div>
@@ -184,7 +184,7 @@ export default function ContactForm() {
           rows={5}
           value={form.message}
           onChange={handleChange}
-          className="w-full px-4 py-3 rounded-lg border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all resize-none placeholder:text-[#0D1F3C]/30"
+          className="w-full px-4 py-3 rounded-xl border border-[#C8E4F5] bg-white text-[#0D1F3C] text-sm focus:outline-none focus:border-[#2980B9] focus:ring-2 focus:ring-[#2980B9]/15 transition-all resize-none placeholder:text-[#0D1F3C]/30"
           placeholder="Tell us about your volume requirements, delivery location, or any specific product questions..."
         />
       </div>
@@ -192,7 +192,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#0D1F3C] text-white rounded-lg font-semibold text-sm hover:bg-[#1A5276] disabled:opacity-60 disabled:cursor-not-allowed transition-colors"
+        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#0D1F3C] text-white rounded-xl font-semibold text-sm hover:bg-[#1A5276] disabled:opacity-60 disabled:cursor-not-allowed transition-colors"
       >
         {loading ? (
           <>

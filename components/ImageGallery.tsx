@@ -28,7 +28,7 @@ export default function ImageGallery({
       {images.map((img, i) => (
         <div
           key={i}
-          className={`relative aspect-[4/3] overflow-hidden bg-[#EBF5FB] ${rounded ? "rounded-2xl" : ""}`}
+          className={`relative aspect-[4/3] overflow-hidden bg-[#EBF5FB] ${rounded ? "rounded-3xl" : ""}`}
         >
           <Image
             src={img.src}

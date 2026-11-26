@@ -106,7 +106,7 @@ export default function ProcessingPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1F3C] text-white text-sm font-semibold rounded-xl hover:bg-[#1A5276] transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1F3C] text-white text-sm font-semibold rounded-2xl hover:bg-[#1A5276] transition-colors"
               >
                 Discuss your processing requirements
                 <ArrowRight size={14} />
@@ -164,8 +164,8 @@ export default function ProcessingPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {coldChain.map((item) => (
-              <div key={item.title} className="p-6 rounded-2xl bg-[#FAFCFE] border border-[#EBF5FB]">
-                <div className="w-10 h-10 rounded-xl bg-[#EBF5FB] flex items-center justify-center text-[#2980B9] mb-4">
+              <div key={item.title} className="p-6 rounded-3xl bg-[#FAFCFE] border border-[#EBF5FB]">
+                <div className="w-10 h-10 rounded-2xl bg-[#EBF5FB] flex items-center justify-center text-[#2980B9] mb-4">
                   {item.icon}
                 </div>
                 <h3 className="text-base font-bold text-[#0D1F3C] mb-2">{item.title}</h3>
@@ -196,7 +196,7 @@ export default function ProcessingPage() {
             </div>
             <div className="space-y-3">
               {exportMarkets.map((m) => (
-                <div key={m.region} className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                <div key={m.region} className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
                   <CheckCircle size={16} className="text-[#93C4E0] flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-sm font-bold text-white">{m.region}</div>

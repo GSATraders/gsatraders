@@ -23,9 +23,9 @@ export default function ProductCategoryCard({
     return (
       <Link
         href={`/products/${slug}`}
-        className="group flex items-center gap-3 p-4 rounded-xl bg-white border border-[#EBF5FB] hover:border-[#93C4E0] hover:shadow-[0_4px_20px_rgba(41,128,185,0.12)] transition-all"
+        className="group flex items-center gap-3 p-4 rounded-2xl bg-white border border-[#EBF5FB] hover:border-[#93C4E0] hover:shadow-[0_4px_20px_rgba(41,128,185,0.12)] transition-all"
       >
-        <div className="w-10 h-10 rounded-lg bg-[#EBF5FB] flex items-center justify-center flex-shrink-0 group-hover:bg-[#D6EBF7] transition-colors">
+        <div className="w-10 h-10 rounded-xl bg-[#EBF5FB] flex items-center justify-center flex-shrink-0 group-hover:bg-[#D6EBF7] transition-colors">
           <SeafoodIcon type={icon} size={22} className="text-[#1A5276]" />
         </div>
         <span className="text-sm font-semibold text-[#0D1F3C] group-hover:text-[#1A5276] transition-colors">
@@ -39,9 +39,9 @@ export default function ProductCategoryCard({
   return (
     <Link
       href={`/products/${slug}`}
-      className="group flex flex-col p-6 rounded-2xl bg-white border border-[#EBF5FB] hover:border-[#93C4E0] hover:shadow-[0_8px_32px_rgba(41,128,185,0.12)] transition-all duration-200"
+      className="group flex flex-col p-6 rounded-3xl bg-white border border-[#EBF5FB] hover:border-[#93C4E0] hover:shadow-[0_8px_32px_rgba(41,128,185,0.12)] transition-all duration-200"
     >
-      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#EBF5FB] to-[#D6EBF7] flex items-center justify-center mb-4 group-hover:from-[#D6EBF7] group-hover:to-[#C1E1F3] transition-all">
+      <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-[#EBF5FB] to-[#D6EBF7] flex items-center justify-center mb-4 group-hover:from-[#D6EBF7] group-hover:to-[#C1E1F3] transition-all">
         <SeafoodIcon type={icon} size={28} className="text-[#1A5276]" />
       </div>
       <h3 className="text-base font-bold text-[#0D1F3C] mb-2 group-hover:text-[#1A5276] transition-colors">

@@ -59,7 +59,7 @@ export default function Header() {
                 <Link
                   key={href}
                   href={href}
-                  className={`relative px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                  className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                     active
                       ? "text-[#1A5276] bg-[#EBF5FB]"
                       : "text-[#0D1F3C]/75 hover:text-[#1A5276] hover:bg-[#EBF5FB]"
@@ -78,7 +78,7 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href="/contact"
-              className="text-sm font-semibold px-5 py-2.5 rounded-md bg-[#0D1F3C] text-white hover:bg-[#1A5276] transition-colors"
+              className="text-sm font-semibold px-5 py-2.5 rounded-lg bg-[#0D1F3C] text-white hover:bg-[#1A5276] transition-colors"
             >
               Speak to Sales
             </Link>
@@ -86,7 +86,7 @@ export default function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-md text-[#0D1F3C] hover:bg-[#EBF5FB] transition-colors"
+            className="md:hidden p-2 rounded-lg text-[#0D1F3C] hover:bg-[#EBF5FB] transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle navigation"
           >
@@ -105,7 +105,7 @@ export default function Header() {
                 <Link
                   key={href}
                   href={href}
-                  className={`px-4 py-3 rounded-md text-sm font-medium transition-colors ${
+                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                     active
                       ? "text-[#1A5276] bg-[#EBF5FB]"
                       : "text-[#0D1F3C]/80 hover:bg-[#EBF5FB]"
@@ -118,7 +118,7 @@ export default function Header() {
             <div className="pt-2 pb-1 border-t border-gray-100 mt-1">
               <Link
                 href="/contact"
-                className="block text-center text-sm font-semibold px-4 py-3 rounded-md bg-[#0D1F3C] text-white hover:bg-[#1A5276]"
+                className="block text-center text-sm font-semibold px-4 py-3 rounded-lg bg-[#0D1F3C] text-white hover:bg-[#1A5276]"
               >
                 Speak to Sales
               </Link>

@@ -103,14 +103,14 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/products"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2980B9] text-white font-semibold rounded-xl hover:bg-[#1A5276] transition-colors text-sm"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#2980B9] text-white font-semibold rounded-2xl hover:bg-[#1A5276] transition-colors text-sm"
               >
                 View product range
                 <ArrowRight size={16} />
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition-colors text-sm"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/30 text-white font-semibold rounded-2xl hover:bg-white/10 transition-colors text-sm"
               >
                 Speak to sales
               </Link>
@@ -184,7 +184,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <div className="aspect-[4/3] rounded-3xl overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-[2.5rem] overflow-hidden relative">
                 <Image
                   src="/images/facility/facility-exterior.jpg"
                   alt="GSA Traders facility, Cape Town"
@@ -192,7 +192,7 @@ export default function HomePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-[#0D1F3C] text-white px-5 py-4 rounded-2xl shadow-xl">
+              <div className="absolute -bottom-4 -right-4 bg-[#0D1F3C] text-white px-5 py-4 rounded-3xl shadow-xl">
                 <div className="text-2xl font-bold">35+</div>
                 <div className="text-xs text-white/60 mt-0.5">Years operating</div>
               </div>
@@ -210,7 +210,7 @@ export default function HomePage() {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {capabilities.map((cap) => (
-                  <div key={cap.title} className="p-4 rounded-xl bg-[#FAFCFE] border border-[#EBF5FB]">
+                  <div key={cap.title} className="p-4 rounded-2xl bg-[#FAFCFE] border border-[#EBF5FB]">
                     <div className="text-xl mb-2">{cap.icon}</div>
                     <h3 className="text-sm font-bold text-[#0D1F3C] mb-1">{cap.title}</h3>
                     <p className="text-xs text-[#0D1F3C]/55 leading-relaxed">{cap.body}</p>
@@ -262,7 +262,7 @@ export default function HomePage() {
             </div>
             <div className="space-y-3">
               {whyGSA.map((point, i) => (
-                <div key={i} className="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/10">
+                <div key={i} className="flex items-start gap-3 p-4 rounded-2xl bg-white/5 border border-white/10">
                   <CheckCircle size={16} className="text-[#93C4E0] flex-shrink-0 mt-0.5" />
                   <span className="text-sm text-white/80 leading-relaxed">{point}</span>
                 </div>
@@ -291,7 +291,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1F3C] text-white text-sm font-semibold rounded-xl hover:bg-[#1A5276] transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1F3C] text-white text-sm font-semibold rounded-2xl hover:bg-[#1A5276] transition-colors"
               >
                 Read about us
                 <ArrowRight size={14} />
@@ -299,7 +299,7 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden relative">
                 <Image
                   src="/images/facility/team-photo.jpg"
                   alt="GSA Traders team, Cape Town"
@@ -307,7 +307,7 @@ export default function HomePage() {
                   className="object-cover object-top"
                 />
               </div>
-              <div className="mt-8 aspect-[3/4] rounded-2xl overflow-hidden relative">
+              <div className="mt-8 aspect-[3/4] rounded-3xl overflow-hidden relative">
                 <Image
                   src="/images/facility/fleet-trucks.jpg"
                   alt="GSA Traders delivery fleet, Cape Town"

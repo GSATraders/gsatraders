@@ -103,7 +103,7 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-4">
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[4/3] rounded-3xl overflow-hidden relative">
                 <Image
                   src="/images/facility/team-photo.jpg"
                   alt="GSA Traders team, Cape Town"
@@ -121,7 +121,7 @@ export default function AboutPage() {
                   { label: "Local and export", sub: "Market reach" },
                   { label: "Cape Town", sub: "Head office" },
                 ].map((stat) => (
-                  <div key={stat.label} className="p-4 rounded-xl bg-[#EBF5FB] border border-[#D6EBF7] text-center">
+                  <div key={stat.label} className="p-4 rounded-2xl bg-[#EBF5FB] border border-[#D6EBF7] text-center">
                     <div className="text-xl font-bold text-[#0D1F3C]">{stat.label}</div>
                     <div className="text-xs text-[#0D1F3C]/55 mt-1">{stat.sub}</div>
                   </div>
@@ -170,7 +170,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden relative">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden relative">
                 <Image
                   src="/images/facility/fleet-trucks.jpg"
                   alt="GSA Traders delivery fleet, Cape Town"
@@ -178,7 +178,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="mt-10 aspect-[3/4] rounded-2xl overflow-hidden relative">
+              <div className="mt-10 aspect-[3/4] rounded-3xl overflow-hidden relative">
                 <Image
                   src="/images/facility/facility-exterior-2.jpg"
                   alt="GSA Traders facility, Cape Town"
@@ -203,7 +203,7 @@ export default function AboutPage() {
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1F3C] text-white text-sm font-semibold rounded-xl hover:bg-[#1A5276] transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1F3C] text-white text-sm font-semibold rounded-2xl hover:bg-[#1A5276] transition-colors"
               >
                 Get in touch
                 <ArrowRight size={14} />
@@ -229,8 +229,8 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {values.map((v) => (
-              <div key={v.title} className="p-6 rounded-2xl bg-white/5 border border-white/10">
-                <div className="w-10 h-10 rounded-xl bg-[#2980B9]/20 flex items-center justify-center text-[#93C4E0] mb-4">
+              <div key={v.title} className="p-6 rounded-3xl bg-white/5 border border-white/10">
+                <div className="w-10 h-10 rounded-2xl bg-[#2980B9]/20 flex items-center justify-center text-[#93C4E0] mb-4">
                   {v.icon}
                 </div>
                 <h3 className="text-base font-bold text-white mb-2">{v.title}</h3>

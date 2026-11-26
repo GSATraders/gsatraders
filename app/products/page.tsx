@@ -66,8 +66,8 @@ export default function ProductsPage() {
       <section className="py-16 bg-white border-t border-[#EBF5FB]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4 p-6 rounded-2xl border border-[#EBF5FB] bg-[#FAFCFE]">
-              <div className="w-12 h-12 rounded-xl bg-[#EBF5FB] flex items-center justify-center flex-shrink-0">
+            <div className="flex items-start gap-4 p-6 rounded-3xl border border-[#EBF5FB] bg-[#FAFCFE]">
+              <div className="w-12 h-12 rounded-2xl bg-[#EBF5FB] flex items-center justify-center flex-shrink-0">
                 <FileText size={22} className="text-[#2980B9]" />
               </div>
               <div>
@@ -83,8 +83,8 @@ export default function ProductsPage() {
                 </Link>
               </div>
             </div>
-            <div className="flex items-start gap-4 p-6 rounded-2xl border border-[#EBF5FB] bg-[#FAFCFE]">
-              <div className="w-12 h-12 rounded-xl bg-[#EBF5FB] flex items-center justify-center flex-shrink-0">
+            <div className="flex items-start gap-4 p-6 rounded-3xl border border-[#EBF5FB] bg-[#FAFCFE]">
+              <div className="w-12 h-12 rounded-2xl bg-[#EBF5FB] flex items-center justify-center flex-shrink-0">
                 <Phone size={22} className="text-[#2980B9]" />
               </div>
               <div>

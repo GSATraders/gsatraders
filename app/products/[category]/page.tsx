@@ -74,7 +74,7 @@ export default async function CategoryPage({ params }: PageProps) {
             All products
           </Link>
           <div className="flex items-start gap-6">
-            <div className="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center flex-shrink-0">
+            <div className="w-16 h-16 rounded-3xl bg-white/10 border border-white/20 flex items-center justify-center flex-shrink-0">
               <SeafoodIcon type={cat.icon} size={32} className="text-[#93C4E0]" />
             </div>
             <div>
@@ -116,14 +116,14 @@ export default async function CategoryPage({ params }: PageProps) {
             </div>
             <Link
               href="/contact"
-              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-[#0D1F3C] text-white text-sm font-semibold rounded-lg hover:bg-[#1A5276] transition-colors"
+              className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-[#0D1F3C] text-white text-sm font-semibold rounded-xl hover:bg-[#1A5276] transition-colors"
             >
               Enquire now
               <ArrowRight size={14} />
             </Link>
           </div>
 
-          <div className="bg-white rounded-2xl border border-[#EBF5FB] overflow-hidden shadow-[0_2px_16px_rgba(13,31,60,0.06)]">
+          <div className="bg-white rounded-3xl border border-[#EBF5FB] overflow-hidden shadow-[0_2px_16px_rgba(13,31,60,0.06)]">
             {/* Table header */}
             <div className="hidden md:grid grid-cols-[2fr_2fr_2fr_2fr] gap-4 px-6 py-3.5 bg-[#0D1F3C] text-xs font-semibold tracking-widest uppercase text-white/60">
               <span>Common Name</span>
@@ -140,7 +140,7 @@ export default async function CategoryPage({ params }: PageProps) {
                   className="grid grid-cols-1 md:grid-cols-[2fr_2fr_2fr_2fr] gap-2 md:gap-4 px-6 py-4 hover:bg-[#FAFCFE] transition-colors"
                 >
                   <div className="flex items-center gap-2.5">
-                    <div className="w-7 h-7 rounded-md bg-[#EBF5FB] flex items-center justify-center flex-shrink-0">
+                    <div className="w-7 h-7 rounded-lg bg-[#EBF5FB] flex items-center justify-center flex-shrink-0">
                       <Package size={13} className="text-[#2980B9]" />
                     </div>
                     <span className="font-semibold text-sm text-[#0D1F3C]">{product.name}</span>
@@ -169,7 +169,7 @@ export default async function CategoryPage({ params }: PageProps) {
           </div>
 
           {/* Notes */}
-          <div className="mt-6 p-4 rounded-xl bg-[#EBF5FB] border border-[#D6EBF7]">
+          <div className="mt-6 p-4 rounded-2xl bg-[#EBF5FB] border border-[#D6EBF7]">
             <p className="text-xs text-[#0D1F3C]/55 leading-relaxed">
               <strong className="text-[#1A5276]">Note:</strong> The above information is indicative. Grading and packaging are subject to availability and can be customised to buyer specification. WR = Whole Round · H&G = Head & Gutted · IQF = Individually Quick Frozen. Contact our sales team for current pricing, pack sizes, and delivery options.
             </p>
@@ -186,7 +186,7 @@ export default async function CategoryPage({ params }: PageProps) {
             </p>
             <div className={`grid gap-4 ${categoryImages[category].length === 1 ? "grid-cols-1 max-w-sm" : categoryImages[category].length === 2 ? "grid-cols-2" : "grid-cols-2 sm:grid-cols-3"}`}>
               {categoryImages[category].map((img) => (
-                <div key={img.src} className="relative aspect-square rounded-2xl overflow-hidden bg-[#EBF5FB]">
+                <div key={img.src} className="relative aspect-square rounded-3xl overflow-hidden bg-[#EBF5FB]">
                   <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="(max-width: 640px) 50vw, 33vw" />
                 </div>
               ))}
@@ -212,9 +212,9 @@ export default async function CategoryPage({ params }: PageProps) {
               <Link
                 key={oc.slug}
                 href={`/products/${oc.slug}`}
-                className="group flex items-center gap-3 p-4 rounded-xl bg-[#FAFCFE] border border-[#EBF5FB] hover:border-[#93C4E0] hover:bg-white transition-all"
+                className="group flex items-center gap-3 p-4 rounded-2xl bg-[#FAFCFE] border border-[#EBF5FB] hover:border-[#93C4E0] hover:bg-white transition-all"
               >
-                <div className="w-8 h-8 rounded-lg bg-[#EBF5FB] flex items-center justify-center flex-shrink-0 group-hover:bg-[#D6EBF7] transition-colors">
+                <div className="w-8 h-8 rounded-xl bg-[#EBF5FB] flex items-center justify-center flex-shrink-0 group-hover:bg-[#D6EBF7] transition-colors">
                   <SeafoodIcon type={oc.icon} size={18} className="text-[#1A5276]" />
                 </div>
                 <span className="text-sm font-semibold text-[#0D1F3C] group-hover:text-[#1A5276] transition-colors leading-tight">
