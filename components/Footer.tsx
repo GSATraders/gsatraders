@@ -27,15 +27,13 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <div className="mb-4">
-              <div className="inline-block bg-white rounded-2xl px-3 py-2">
-                <Image
-                  src="/images/logo/gsa-logo.png"
-                  alt="GSA Traders"
-                  width={110}
-                  height={66}
-                  className="h-10 w-auto object-contain"
-                />
-              </div>
+              <Image
+                src="/images/logo/gsa-logo.png"
+                alt="GSA Traders"
+                width={110}
+                height={66}
+                className="h-10 w-auto object-contain"
+              />
               <div className="text-[#93C4E0] text-xs tracking-widest uppercase mt-2">
                 Est. 1989
               </div>
@@ -107,9 +105,7 @@ export default function Footer() {
               <li className="flex items-start gap-2.5">
                 <MapPin size={14} className="text-[#93C4E0] mt-0.5 flex-shrink-0" />
                 <Link href="/contact" className="text-sm text-white/70 hover:text-white transition-colors">
-                  Cape Town, Western Cape
-                  <br />
-                  South Africa
+                  4 Daytona Close, Killarney Gardens, Cape Town, South Africa
                 </Link>
               </li>
               <li className="flex items-center gap-2.5">
