@@ -59,7 +59,7 @@ export default function ContactPage() {
             {branches.map((branch) => (
               <div
                 key={branch.name}
-                className="rounded-3xl bg-white border border-[#EBF5FB] shadow-[0_2px_16px_rgba(13,31,60,0.06)] overflow-hidden"
+                className="rounded-[2.5rem] bg-white border border-[#EBF5FB] shadow-[0_2px_16px_rgba(13,31,60,0.06)] overflow-hidden"
               >
                 <iframe
                   title={`${branch.name} location on Google Maps`}
