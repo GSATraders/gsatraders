@@ -61,13 +61,23 @@ export default function ContactPage() {
                 key={branch.name}
                 className="rounded-[2.5rem] bg-white border border-[#EBF5FB] shadow-[0_2px_16px_rgba(13,31,60,0.06)] overflow-hidden"
               >
-                <iframe
-                  title={`${branch.name} location on Google Maps`}
-                  src={`https://www.google.com/maps?q=${encodeURIComponent(branch.mapQuery)}&output=embed`}
-                  className="h-44 w-full border-0 border-b border-[#D6EBF7]"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+                <div className="relative h-44">
+                  <iframe
+                    title={`${branch.name} location on Google Maps`}
+                    src={`https://www.google.com/maps?q=${encodeURIComponent(branch.mapQuery)}&output=embed`}
+                    className="h-full w-full border-0 border-b border-[#D6EBF7]"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(branch.mapQuery)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute left-2 top-2 z-10 rounded-full bg-white px-3 py-1.5 text-xs font-medium text-[#1A73E8] shadow-sm ring-1 ring-black/5 hover:bg-[#F8F9FA] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1A73E8]"
+                  >
+                    Maps ↗
+                  </a>
+                </div>
 
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">
