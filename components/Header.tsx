@@ -38,19 +38,15 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 md:h-24">
-
+        <div className="relative flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link
-            href="/"
-            className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 flex items-center group"
-          >
+          <Link href="/" className="flex items-center group shrink-0">
             <Image
               src="/images/logo/gsa-logo.png"
               alt="GSA Traders"
               width={120}
               height={72}
-              className={`${scrolled ? "h-[94px] md:h-[109px]" : "h-[67px] md:h-[78px]"} w-auto object-contain transition-all duration-300`}
+              className={`${scrolled ? "h-[67px] md:h-[78px]" : "h-[48px] md:h-[56px]"} w-auto object-contain transition-all duration-300`}
               priority
             />
           </Link>
