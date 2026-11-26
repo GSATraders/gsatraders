@@ -107,19 +107,13 @@ export default function HomePage() {
                 View product range
                 <ArrowRight size={16} />
               </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/30 text-white font-semibold rounded-2xl hover:bg-white/10 transition-colors text-sm"
-              >
-                Speak to sales
-              </Link>
             </div>
           </div>
         </div>
 
         <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 64" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-8 md:h-12">
-            <path d="M0 64C360 8 1080 8 1440 64V64H0Z" fill="white"/>
+          <svg viewBox="0 0 1440 96" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-12 md:h-20">
+            <path d="M0 56C240 8 420 8 600 40C780 72 960 88 1140 56C1260 36 1360 16 1440 24V96H0Z" fill="white"/>
           </svg>
         </div>
       </section>

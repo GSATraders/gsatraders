@@ -16,7 +16,7 @@ const branches = [
     email: "sales@gsatraders.co.za",
     hours: "Monday–Friday: 07:00–17:00",
     note: "Processing facility and head office",
-    mapPlaceholder: "/images/hero/cape-town-map.jpg",
+    mapQuery: "GSA Traders Cape Town, Western Cape, South Africa",
   },
   {
     name: "KwaZulu-Natal",
@@ -25,7 +25,7 @@ const branches = [
     email: "kzn@gsatraders.co.za",
     hours: "Monday–Friday: 07:30–17:00",
     note: "Distribution and sales office",
-    mapPlaceholder: "/images/hero/kzn-map.jpg",
+    mapQuery: "GSA Traders Durban, KwaZulu-Natal, South Africa",
   },
 ];
 
@@ -61,19 +61,13 @@ export default function ContactPage() {
                 key={branch.name}
                 className="rounded-3xl bg-white border border-[#EBF5FB] shadow-[0_2px_16px_rgba(13,31,60,0.06)] overflow-hidden"
               >
-                {/* Map placeholder */}
-                <div className="h-44 bg-[#EBF5FB] border-b border-[#D6EBF7] flex items-center justify-center relative">
-                  {/*
-                    IMAGE PLACEHOLDER:
-                    Replace with: <Image src={branch.mapPlaceholder} alt={`${branch.name} location`} fill className="object-cover" />
-                    Or embed a Google Maps iframe
-                  */}
-                  <div className="text-center text-[#2980B9]/30">
-                    <MapPin size={28} className="mx-auto mb-2 text-[#2980B9]/30" />
-                    <p className="text-xs font-medium">{branch.name}: Location</p>
-                    <p className="text-[10px] mt-0.5 font-mono text-[#2980B9]/25">{branch.mapPlaceholder}</p>
-                  </div>
-                </div>
+                <iframe
+                  title={`${branch.name} location on Google Maps`}
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(branch.mapQuery)}&output=embed`}
+                  className="h-44 w-full border-0 border-b border-[#D6EBF7]"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
 
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">

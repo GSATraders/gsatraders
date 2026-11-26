@@ -38,7 +38,7 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className={`flex items-center justify-between ${scrolled ? "h-20 md:h-28" : "h-16 md:h-20"} transition-all duration-300`}>
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
@@ -46,7 +46,7 @@ export default function Header() {
               alt="GSA Traders"
               width={120}
               height={72}
-              className={`${scrolled ? "h-14 md:h-16" : "h-12 md:h-14"} w-auto object-contain transition-all duration-300`}
+              className={`${scrolled ? "h-16 md:h-24" : "h-12 md:h-14"} w-auto object-contain transition-all duration-300`}
               priority
             />
           </Link>
