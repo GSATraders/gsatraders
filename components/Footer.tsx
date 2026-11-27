@@ -23,9 +23,9 @@ export default function Footer() {
     <footer className="bg-[#0D1F3C] text-white">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* Brand column */}
-          <div className="lg:col-span-1">
+          <div className="col-span-2 lg:col-span-1">
             <div className="mb-4">
               <Image
                 src="/images/logo/gsa-logo.png"
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <h4 className="text-xs font-semibold tracking-widest uppercase text-white/40 mb-4">
               Contact
             </h4>
