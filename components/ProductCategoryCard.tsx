@@ -8,6 +8,7 @@ interface ProductCategoryCardProps {
   description: string;
   icon: string;
   variant?: "default" | "compact";
+  className?: string;
 }
 
 export default function ProductCategoryCard({
@@ -16,6 +17,7 @@ export default function ProductCategoryCard({
   description,
   icon,
   variant = "default",
+  className = "",
 }: ProductCategoryCardProps) {
   if (variant === "compact") {
     return (
@@ -37,7 +39,7 @@ export default function ProductCategoryCard({
   return (
     <Link
       href={`/products/${slug}`}
-      className="group flex flex-col p-6 rounded-3xl bg-white border border-[#EBF5FB] hover:border-[#93C4E0] hover:shadow-[0_8px_32px_rgba(41,128,185,0.12)] transition-all duration-200"
+      className={`group flex flex-col p-6 rounded-3xl bg-white border border-[#EBF5FB] hover:border-[#93C4E0] hover:shadow-[0_8px_32px_rgba(41,128,185,0.12)] transition-all duration-200 ease-out ${className}`}
     >
       <div className="w-14 h-14 rounded-3xl bg-gradient-to-br from-[#EBF5FB] to-[#D6EBF7] flex items-center justify-center mb-4 group-hover:from-[#D6EBF7] group-hover:to-[#C1E1F3] transition-all">
         <SeafoodIcon type={icon} size={28} className="text-[#1A5276]" />

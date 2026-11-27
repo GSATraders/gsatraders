@@ -152,6 +152,7 @@ export default function HomePage() {
                 name={cat.name}
                 description={cat.description}
                 icon={cat.icon}
+                className="motion-safe:hover:-translate-y-0.5 motion-safe:active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2980B9] focus-visible:ring-offset-2 motion-reduce:transition-none"
               />
             ))}
           </div>
