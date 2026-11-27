@@ -46,7 +46,7 @@ export default function Header() {
               alt="GSA Traders"
               width={120}
               height={72}
-              className={`${scrolled ? "h-[67px] md:h-[78px]" : "h-[48px] md:h-[56px]"} w-auto object-contain transition-all duration-300`}
+              className={`${scrolled ? "h-[62px] md:h-[78px]" : "h-[48px] md:h-[56px]"} w-auto object-contain transition-all duration-300`}
               priority
             />
           </Link>

@@ -28,7 +28,7 @@ export default function ProductsPage() {
               Seafood categories across local and international species
             </h1>
             <p className="text-lg text-white/65 leading-relaxed">
-              We source and supply hake, squid, tuna, crayfish, soles, game fish, mussels, prawns, and freshwater species from local and international origins. All product is processed and packed to specification at our Cape Town facility.
+              We source and supply hake, squid, tuna, soles, game fish, mussels, octopus, crustaceans and freshwater species from local and international origins. All product is processed and packed to specification at our Cape Town facility.
             </p>
           </div>
         </div>
@@ -38,7 +38,6 @@ export default function ProductsPage() {
       <div className="bg-[#EBF5FB] border-b border-[#C8E4F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
           <p className="text-sm text-[#0D1F3C]/60 text-center">
-            <strong className="text-[#1A5276] font-semibold">Availability note:</strong>{" "}
             Product availability, grading, and packaging may vary by season and sourcing. Contact our sales team for current stock and specifications.
           </p>
         </div>
