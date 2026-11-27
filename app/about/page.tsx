@@ -49,6 +49,8 @@ const milestones = [
   { year: "Mid-1990s", event: "Processing capacity expanded and supply extended to larger wholesale and retail accounts." },
   { year: "1999", event: "Export relationships developed, supplying seafood to European and Asian markets." },
   { year: "2003", event: "KwaZulu-Natal distribution established, extending supply to Durban and the broader KZN market." },
+  { year: "Mid-2000s", event: "Export relationships developed, supplying seafood to European and Asian markets." },
+  { year: "2010s", event: "Introduced our own retail lines under the Ocean Products brand." },
   { year: "Today", event: "Franco and Giovanni Asaro are part of the team, continuing the business their parents built." },
 ];
 
@@ -66,7 +68,7 @@ export default function AboutPage() {
               About GSA Traders
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight mb-5">
-              Cape Town seafood wholesale, processing, and export since 1989
+              Seafood wholesale, processing, and export since 1989
             </h1>
             <p className="text-lg text-white/65 leading-relaxed max-w-2xl">
               GSA Traders was founded by Gino and Susan Asaro in Cape Town. Over more than three decades the business has grown into an established seafood wholesale, processing, and export operation supplying local and international buyers.
@@ -147,7 +149,7 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="relative">
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-[#D6EBF7] md:-translate-x-0.5" />
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-[#D6EBF7] md:-translate-x-1/2" />
             <div className="space-y-8">
               {milestones.map((m, i) => (
                 <div key={m.year} className={`relative flex gap-6 md:gap-8 ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} items-start`}>
@@ -159,7 +161,7 @@ export default function AboutPage() {
                       <p className="text-sm text-[#0D1F3C]/70 leading-relaxed">{m.event}</p>
                     </div>
                   </div>
-                  <div className="absolute left-8 md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-[#2980B9] border-3 border-white shadow-md flex-shrink-0" />
+                  <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-[#2980B9] border-3 border-white shadow-md flex-shrink-0" />
                   <div className="md:w-1/2" />
                 </div>
               ))}
