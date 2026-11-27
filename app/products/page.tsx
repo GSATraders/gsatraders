@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, FileText, Phone } from "lucide-react";
 import ProductCategoryCard from "@/components/ProductCategoryCard";
 import CTASection from "@/components/CTASection";
+import ProductImageCarousel from "@/components/ProductImageCarousel";
 import { productCategories } from "@/lib/products";
 
 export const metadata: Metadata = {
@@ -16,6 +17,11 @@ export default function ProductsPage() {
     <>
       {/* ─── PAGE HERO ─── */}
       <section className="pt-32 pb-28 md:pb-32 bg-[#0D1F3C] relative overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-cover bg-center opacity-30"
+          style={{ backgroundImage: 'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/JAN_6978.JPG-0PbXAkvtqVFoZQSEm5GVqTj5gfZ8Ee.jpeg")' }}
+        />
         <div className="absolute inset-0 opacity-[0.05]"
           style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "48px 48px" }}
         />
@@ -63,6 +69,13 @@ export default function ProductsPage() {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ─── PHOTO CAROUSEL ─── */}
+      <section className="py-10 md:py-14 bg-[#FAFCFE]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ProductImageCarousel />
         </div>
       </section>
 
