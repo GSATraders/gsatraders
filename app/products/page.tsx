@@ -49,9 +49,9 @@ export default function ProductsPage() {
       </div>
 
       {/* ─── CATEGORIES GRID ─── */}
-      <section className="py-16 md:py-20 bg-[#FAFCFE]">
+      <section className="py-10 md:py-16 bg-[#FAFCFE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-5">
             {productCategories.map((cat) => (
               <ProductCategoryCard
                 key={cat.slug}
@@ -59,6 +59,7 @@ export default function ProductsPage() {
                 name={cat.name}
                 description={cat.description}
                 icon={cat.icon}
+                variant="compact"
               />
             ))}
           </div>

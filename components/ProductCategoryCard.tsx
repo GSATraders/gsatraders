@@ -21,12 +21,12 @@ export default function ProductCategoryCard({
     return (
       <Link
         href={`/products/${slug}`}
-        className="group flex items-center gap-3 p-4 rounded-2xl bg-white border border-[#EBF5FB] hover:border-[#93C4E0] hover:shadow-[0_4px_20px_rgba(41,128,185,0.12)] transition-all"
+        className="group flex items-center gap-2 md:gap-3 p-3 rounded-2xl bg-white border border-[#EBF5FB] hover:border-[#93C4E0] hover:shadow-[0_4px_20px_rgba(41,128,185,0.12)] transition-all"
       >
-        <div className="w-10 h-10 rounded-xl bg-[#EBF5FB] flex items-center justify-center flex-shrink-0 group-hover:bg-[#D6EBF7] transition-colors">
-          <SeafoodIcon type={icon} size={22} className="text-[#1A5276]" />
+        <div className="w-8 h-8 rounded-lg bg-[#EBF5FB] flex items-center justify-center flex-shrink-0 group-hover:bg-[#D6EBF7] transition-colors">
+          <SeafoodIcon type={icon} size={18} className="text-[#1A5276]" />
         </div>
-        <span className="text-sm font-semibold text-[#0D1F3C] group-hover:text-[#1A5276] transition-colors">
+        <span className="text-xs md:text-sm font-semibold text-[#0D1F3C] group-hover:text-[#1A5276] transition-colors">
           {name}
         </span>
         <ArrowRight size={14} className="ml-auto text-[#2980B9] opacity-0 group-hover:opacity-100 transition-opacity" />
