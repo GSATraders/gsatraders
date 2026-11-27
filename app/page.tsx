@@ -67,7 +67,7 @@ export default function HomePage() {
   return (
     <>
       {/* ─── HERO ─── */}
-      <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-[#0D1F3C] pt-20">
+      <section id="top" className="relative min-h-[92vh] flex items-center overflow-hidden bg-[#0D1F3C] pt-20">
         <div className="absolute inset-0">
           <Image
             src="/images/hero/hero-bg.jpg"
@@ -259,54 +259,6 @@ export default function HomePage() {
                   <span className="text-sm text-white/80 leading-relaxed">{point}</span>
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── FAMILY STORY PREVIEW ─── */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-xs font-semibold tracking-widest uppercase text-[#2980B9] mb-3">
-                Our story
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0D1F3C] tracking-tight mb-5">
-                Family-owned since the beginning
-              </h2>
-              <p className="text-base text-[#0D1F3C]/65 leading-relaxed mb-5">
-                Gino and Susan Asaro started GSA Traders in Cape Town in 1989. The business grew through a straightforward approach: source product carefully, process it properly, and supply buyers consistently.
-              </p>
-              <p className="text-base text-[#0D1F3C]/65 leading-relaxed mb-8">
-                Their sons Franco and Giovanni are now involved in the business. The people making decisions at GSA Traders are close to the product, the suppliers, and the customers.
-              </p>
-              <Link
-                href="/about"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D1F3C] text-white text-sm font-semibold rounded-2xl hover:bg-[#1A5276] transition-colors"
-              >
-                Read about us
-                <ArrowRight size={14} />
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden relative">
-                <Image
-                  src="/images/facility/team-photo.jpg"
-                  alt="GSA Traders team, Cape Town"
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
-              <div className="mt-8 aspect-[3/4] rounded-3xl overflow-hidden relative">
-                <Image
-                  src="/images/facility/fleet-trucks.jpg"
-                  alt="GSA Traders delivery fleet, Cape Town"
-                  fill
-                  className="object-cover"
-                />
-              </div>
             </div>
           </div>
         </div>

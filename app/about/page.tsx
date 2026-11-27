@@ -96,7 +96,7 @@ export default function AboutPage() {
                   Gino and Susan Asaro started GSA Traders in Cape Town in 1989. From the beginning the work was practical: source good product, handle it carefully, and supply buyers consistently.
                 </p>
                 <p>
-                  Over time the business grew. Processing capacity was added, supplier relationships were extended, and the cold-chain infrastructure was developed to serve larger wholesale and export accounts. Growth came from doing the work well and from the relationships built with buyers over many years.
+                  Over time the business grew. Processing capacity was added, supplier relationships were extended, and the cold-chain infrastructure was developed to serve larger wholesale customers and export accounts. Growth came from doing the work well and from the relationships built with buyers over many years.
                 </p>
                 <p>
                   Franco and Giovanni Asaro are now actively involved. They work across operations, purchasing, and sales, and carry forward the same standards the business has operated to since the beginning.
@@ -115,9 +115,7 @@ export default function AboutPage() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0D1F3C]/70 to-transparent px-5 py-4">
-                  <p className="text-white text-sm font-medium">The GSA Traders team, Cape Town</p>
-                </div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0D1F3C]/70 to-transparent px-5 py-4" />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {[

@@ -26,8 +26,10 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
+    const closeMenu = () => setMobileOpen(false);
+    window.addEventListener("popstate", closeMenu);
+    return () => window.removeEventListener("popstate", closeMenu);
+  }, []);
 
   return (
     <header
@@ -40,7 +42,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center group shrink-0">
+          <Link
+            href="/#top"
+            onClick={() => {
+              if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="flex items-center group shrink-0"
+          >
             <Image
               src="/images/logo/gsa-logo.png"
               alt="GSA Traders"
@@ -105,6 +113,7 @@ export default function Header() {
                 <Link
                   key={href}
                   href={href}
+                  onClick={() => setMobileOpen(false)}
                   className={`px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                     active
                       ? "text-[#1A5276] bg-[#EBF5FB]"
@@ -118,6 +127,7 @@ export default function Header() {
             <div className="pt-2 pb-1 border-t border-gray-100 mt-1">
               <Link
                 href="/contact"
+                onClick={() => setMobileOpen(false)}
                 className="block text-center text-sm font-semibold px-4 py-3 rounded-lg bg-[#0D1F3C] text-white hover:bg-[#1A5276]"
               >
                 Speak to Sales
