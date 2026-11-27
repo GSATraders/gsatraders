@@ -59,6 +59,16 @@ export default function AboutPage() {
     <>
       {/* ─── PAGE HERO ─── */}
       <section className="pt-32 pb-28 md:pb-32 bg-[#0D1F3C] relative overflow-hidden">
+        <div className="absolute inset-0" aria-hidden="true">
+          <Image
+            src="/images/hero/about-factory-bg.png"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-[#0D1F3C]/88" />
+        </div>
         <div className="absolute inset-0 opacity-[0.05]"
           style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "48px 48px" }}
         />
