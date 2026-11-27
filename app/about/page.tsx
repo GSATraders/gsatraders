@@ -47,7 +47,7 @@ const values = [
 const milestones = [
   { year: "1989", event: "Gino and Susan Asaro founded GSA Traders in Cape Town." },
   { year: "Mid-1990s", event: "Processing capacity expanded and supply extended to larger wholesale and retail accounts." },
-  { year: "2000s", event: "Export relationships developed, supplying seafood to European and Asian markets." },
+  { year: "1999", event: "Export relationships developed, supplying seafood to European and Asian markets." },
   { year: "2003", event: "KwaZulu-Natal distribution established, extending supply to Durban and the broader KZN market." },
   { year: "Today", event: "Franco and Giovanni Asaro are part of the team, continuing the business their parents built." },
 ];
@@ -72,6 +72,11 @@ export default function AboutPage() {
               GSA Traders was founded by Gino and Susan Asaro in Cape Town. Over more than three decades the business has grown into an established seafood wholesale, processing, and export operation supplying local and international buyers.
             </p>
           </div>
+        </div>
+        <div className="absolute bottom-0 left-0 right-0" aria-hidden="true">
+          <svg viewBox="0 0 1440 96" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-12 md:h-20">
+            <path d="M0 56C240 8 420 8 600 40C780 72 960 88 1140 56C1260 36 1360 16 1440 24V96H0Z" fill="white" />
+          </svg>
         </div>
       </section>
 
@@ -118,7 +123,7 @@ export default function AboutPage() {
                 {[
                   { label: "35+", sub: "Years in operation" },
                   { label: "2", sub: "Family generations" },
-                  { label: "Local and export", sub: "Market reach" },
+                  { label: "Local and Export", sub: "Market reach" },
                   { label: "Cape Town", sub: "Head office" },
                 ].map((stat) => (
                   <div key={stat.label} className="p-4 rounded-2xl bg-[#EBF5FB] border border-[#D6EBF7] text-center">
@@ -196,7 +201,7 @@ export default function AboutPage() {
                 Franco and Giovanni Asaro
               </h2>
               <p className="text-base text-[#0D1F3C]/65 leading-relaxed mb-5">
-                Franco and Giovanni Asaro grew up around the business. They know the product categories, the suppliers, and the standards the business has been known for.
+                Franco and Giovanni Asaro grew up in and around the business. They know the product categories, the suppliers, the customers and the standards the business has been known for.
               </p>
               <p className="text-base text-[#0D1F3C]/65 leading-relaxed mb-8">
                 They work across purchasing, processing, and sales. The aim is straightforward: keep the supply consistent, keep the standards up, and maintain the customer relationships built over the years.

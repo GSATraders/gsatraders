@@ -32,6 +32,11 @@ export default function ProductsPage() {
             </p>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0" aria-hidden="true">
+          <svg viewBox="0 0 1440 96" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-12 md:h-20">
+            <path d="M0 56C240 8 420 8 600 40C780 72 960 88 1140 56C1260 36 1360 16 1440 24V96H0Z" fill="#EBF5FB" />
+          </svg>
+        </div>
       </section>
 
       {/* ─── AVAILABILITY NOTICE ─── */}
